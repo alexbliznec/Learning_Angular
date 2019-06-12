@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body::before {
+    content: '';
+    background-image:  url(./public/img/wood_boards_001.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

@@ -1,8 +1,69 @@
 .app-body {
-    background: rgb(92, 165, 92);
-    width: 100%;
-    height: 500px
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: minmax(100%, auto);
+    grid-column-start: auto;
+    align-items: flex-start;
+    grid-column-gap: 10px;
 }
-h1 {
-    text-align: center
+.user-window {
+    background: rgb(240, 234, 218);
+    color: black;
+    height: 80vh;
+    border-radius: 5px;
+    box-shadow: 5px 3px 10px black;
+
+}
+form {
+    position: relative;
+}
+form input {
+    width: 100%;
+    padding: 18px 0;
+    background: rgba(151, 83, 38, 0.548);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+}
+form input:focus {
+    outline: none;
+}
+form input[type="text"]::-webkit-input-placeholder {
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+}
+form input[type="text"]::-moz-placeholder {
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+}
+.tasks-list {
+
+}
+#add-task {
+    background: rgba(151, 83, 38, 0.548);
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    cursor: pointer;  
+}
+#add-task:focus {
+    outline: none;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 10px;
+    margin-top: 15px;
+    background: rgba(128, 128, 128, 0.63);
+    box-shadow: 2px 3px 5px black;
+    border-radius: 5px;
+    margin-left: -41px;
+
 }

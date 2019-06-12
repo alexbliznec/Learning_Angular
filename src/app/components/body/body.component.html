@@ -1,3 +1,16 @@
 <div class="app-body">
-  <h1>There will be some body</h1>
+  <div class="user-window">Пользователь</div>
+  <div class="tasks">
+    <div>
+      <form (submit)="addTask(task.value)">
+        <input type="text" placeholder="Добавьте новую задачу..." #task>
+        <button type="submit" id="add-task">Добавить</button>
+      </form>
+      <div class="tasks-list">
+        <ul>
+          <li *ngFor="let task of tasks">{{ task }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

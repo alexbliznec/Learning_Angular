@@ -1,0 +1,6 @@
+.container {
+    display: grid;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-gap: 10px;
+}
